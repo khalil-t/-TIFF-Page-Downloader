@@ -1,18 +1,33 @@
-# 📚 TIFF Page Downloader with Selenium and Requests
+# 📘 TIFF Page Downloader (Web Scraper)
 
-This Python script allows you to **automatically download pages in TIFF format** from a web-based book/document using **Selenium** and **Requests**. Each page is saved in a separate folder as a `.tif` file.
+This Python script automates the download of `.tif` images (TIFF format) from a web-based viewer using Selenium and Requests. It navigates to each page of a digitized book or document and saves the image locally.
 
----
+## 🚀 Features
+
+- Uses `Selenium` to interact with a website that dynamically loads pages
+- Downloads `.tif` images for a specified range of pages
+- Automatically creates folders for each page
+- Runs headlessly using Chrome in the background
+
+## 📂 Project Structure
+├── chromedriver.exe
+├── script.py
+└── page_<number>
+└── page_<number>.tif
+
 
 ## 🧰 Requirements
 
 - Python 3.x
-- Google Chrome
-- `chromedriver.exe` (must be placed in the same directory as the script)
+- Google Chrome installed
+- ChromeDriver (compatible with your Chrome version)
 
-### Python Packages
+### Install dependencies
+base_url = "https://example.com/viewer?docid=12345"
+image_url = driver.find_element(By.TAG_NAME, "img").get_attribute("src")
 
-You can install the required packages with:
 
 ```bash
 pip install selenium requests
+
+
