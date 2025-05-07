@@ -24,7 +24,6 @@ This Python script automates the download of `.tif` images (TIFF format) from a 
 
 ### Install dependencies
 base_url = "https://example.com/viewer?docid=12345"
-image_url = driver.find_element(By.TAG_NAME, "img").get_attribute("src")
 
 
 ```bash
